@@ -1,0 +1,115 @@
+.header {
+  height: 60px;
+  background-color: blue;
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.my-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.my-container2 {
+  width: 100%;
+  padding: 50px;
+}
+
+.MuiCardContent-root{
+  background-color: rgb(190, 182, 182);
+}
+
+
+
+
+/* ------------------- */
+body{
+  background:#eee;
+}
+
+.card{
+  border:none;
+
+  position:relative;
+  overflow:hidden;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+.card:before{
+  
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background-color:#1976d262;
+  transform:scaleY(1);
+  transition:all 0.5s;
+  transform-origin: bottom
+}
+
+.card:after{
+  
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  width:4px;
+  height:100%;
+  background-color: #1976D2;
+  transform:scaleY(0);
+  transition:all 0.5s;
+  transform-origin: bottom
+}
+
+.card:hover::after{
+  transform:scaleY(1);
+}
+
+
+.fonts{
+  font-size:11px;
+}
+
+.social-list{
+  display:flex;
+  list-style:none;
+  justify-content:center;
+  padding:0;
+}
+
+.social-list li{
+  padding:10px;
+  color: #1976D2;
+  font-size:19px;
+}
+
+
+.buttons button:nth-child(1){
+     border:1px solid  #1976D2 !important;
+     color: #1976D2;
+     height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+     border:1px solid  #1976D2 !important;
+     color:#fff;
+     height:40px;
+     background-color: #1976D2;
+}
+
+.buttons button:nth-child(2){
+     border:1px solid #1976D2 !important;
+     background-color: #1976D2;
+     color:#fff;
+      height:40px;
+}
