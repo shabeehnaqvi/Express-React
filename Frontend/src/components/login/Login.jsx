@@ -55,39 +55,7 @@ const Login = () => {
           localStorage.setItem("user_login", JSON.stringify(data2));
           localStorage.setItem("islogin", true);
         }
-        // const { email, password } = inpval;
-        // let database = data;
 
-        // if (email === "") {
-        //   toast.error("Email field is requred", {
-        //     position: "top-center",
-        //   });
-        // } else if (!email.includes("@")) {
-        //   toast.error("plz enter valid email addres", {
-        //     position: "top-center",
-        //   });
-        // } else if (password === "") {
-        //   toast.error("password field is required", {
-        //     position: "top-center",
-        //   });
-        // } else if (password.length < 5) {
-        //   toast.error("password length greater five", {
-        //     position: "top-center",
-        //   });
-        // } else {
-        //   const user = database.find(
-        //     (data) => data.email === email && data.password === password
-        //   );
-
-        //   if (user) {
-        //     toast.success("Welcome " + user.name);
-        //     localStorage.setItem("user_login", JSON.stringify(user));
-        //     localStorage.setItem("islogin", true);
-        //     history("/home");
-        //   } else {
-        //     toast.error("invalid details");
-        //   }
-        // }
       });
   };
 

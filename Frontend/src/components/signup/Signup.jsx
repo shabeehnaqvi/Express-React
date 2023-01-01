@@ -74,7 +74,6 @@ function Signup() {
             userlength = data.length;
 
             const user = {
-              id: userlength + 1,
               email: email,
               name: name,
               password: password,
