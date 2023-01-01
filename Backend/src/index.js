@@ -1,7 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const authHandler = require("./middleware/auth");
-const Student = require("./models/Student");
+const { GridFsStorage } = require("multer-gridfs-storage");
+
 const router = require("./routes/user/user.controller");
 const routerTeacher = require("./routes/teacher/user.controller");
 const router2 = require("./routes/product/product.controller");
@@ -20,7 +20,6 @@ mongoose
 app.use("/student", router);
 app.use("/teacher", routerTeacher);
 app.use("/product", router2);
-
 app.use("/user", routerUser);
 
 app.listen(5000, () => console.log("App is listening at port 5000"));
